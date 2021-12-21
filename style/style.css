@@ -1,0 +1,96 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fontPadrão: verdana, Geneva, Tahoma, sans-serif;
+    --fontTitulo: 'Passion One', cursive;
+    --fontConteudo: 'Sriracha', cursive;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fontPadrão);
+}
+
+header {
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-size: 8.5vw;
+    font-variant: small-caps;
+    font-family: var(--fontTitulo);
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fontConteudo);
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+.normal {
+    background: #ffffff;
+    color: #000000;
+}
+
+.image {
+    background: #222222;
+    color: #ffffff;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.image > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: #0000007e;
+    text-shadow: 1px 1px 0px black;
+}
+
+#img01 {
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#img02 {
+    background-image: url("../imagens/background002.jpg"); 
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
